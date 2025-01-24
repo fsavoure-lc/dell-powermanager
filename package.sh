@@ -16,7 +16,7 @@ ICON_PATH="/opt/$PACKAGE/icon"
 APP_PATH="/opt/$PACKAGE"
 APP_DIR="./package$APP_PATH"
 DEB_DIR="./package/DEBIAN"
-VERSION=$(git describe --tags)+$(date '+%Y%m%d-%H%M%S')
+VERSION=1
 ARCHITECTURE=$(dpkg --print-architecture)
 BUILD_PATH="build/linux/$([[ $(dpkg --print-architecture) == 'arm64' ]] && echo 'arm64' || echo 'x64')/release/bundle"
 
